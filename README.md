@@ -31,11 +31,11 @@ model = models.Generic2dOscillator()
 coupling = coupling.Linear(a=0.015)
 connectivity = connectivity.Connectivity.from_file()
 ```
-models.Generic2dOscillator(): Defines a generic neural mass model for simulation.
+- **`models.Generic2dOscillator()`**: Defines a generic neural mass model for simulation.
 
-coupling.Linear(a=0.015): Sets up the coupling strength between brain regions.
+- **`coupling.Linear(a=0.015)`**: Sets up the coupling strength between brain regions.
 
-connectivity.Connectivity.from_file(): Loads the brain connectivity matrix.
+- **`connectivity.Connectivity.from_file()`**: Loads the brain connectivity matrix.
 
 ### Set Up and Run the Simulation
 
@@ -51,13 +51,13 @@ sim = simulator.Simulator(
 
 (time, data), = sim.run()
 ```
-simulator.Simulator(): Sets up the simulation environment.
+- **`simulator.Simulator()`**: Sets up the simulation environment.
 
-integrators.HeunStochastic(dt=0.1): Defines a stochastic integration scheme.
+- **`integrators.HeunStochastic(dt=0.1)`**: Defines a stochastic integration scheme.
 
-monitors.Raw(): Captures raw neural activity data.
+- **`monitors.Raw()`**: Captures raw neural activity data.
 
-sim.run(): Executes the simulation.
+- **`sim.run()`**: Executes the simulation.
 
 ### Visualize the Results
 
