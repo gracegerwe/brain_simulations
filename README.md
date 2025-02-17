@@ -92,6 +92,9 @@ plt.show()
 ```
 This visualization helps interpret connectivity changes across brain regions.
 
+### Credits
+This project includes components from [Project Name](https://github.com/the-virtual-brain/tvb-root), which is licensed under the MIT License.
+
 ## Applications
 
 Neuromodulation: Understanding how stimulation affects brain connectivity.
