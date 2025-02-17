@@ -1,10 +1,10 @@
 # brain_simulations
 
-Overview
+## Overview
 
 This repository is focused on virtual brain connectivity and neural stimulation modeling. It leverages The Virtual Brain (TVB) framework ([TVB](https://www.thevirtualbrain.org/tvb/zwei/home)), an advanced computational neuroscience tool designed to simulate large-scale brain dynamics using biologically plausible models. TVB provides a powerful platform for simulating brain activity based on real brain imaging data (fMRI, DTI, EEG, MEG), visualizing neural interactions, and generating visualizations of structural and functional connectivity.
 
-Features
+## Features
 
 Simulates neural connectivity and stimulation effects.
 
@@ -14,9 +14,9 @@ Provides visualization of brain activity and connectivity patterns.
 
 Can be used for neuromodulation research and brain-computer interface applications.
 
-Usage
+## Usage
 
-Load the Required Libraries
+### Load the Required Libraries
 
 The first few cells of the notebook load essential libraries. Run the following code snippet:
 
@@ -28,7 +28,7 @@ from tvb.simulator.lab import *
 
 These libraries handle numerical computations, data visualization, and brain connectivity modeling.
 
-Initialize the Virtual Brain Model
+### Initialize the Virtual Brain Model
 
 The following code snippet initializes a default brain model using TVB:
 
@@ -42,7 +42,7 @@ coupling.Linear(a=0.015): Sets up the coupling strength between brain regions.
 
 connectivity.Connectivity.from_file(): Loads the brain connectivity matrix.
 
-Set Up and Run the Simulation
+### Set Up and Run the Simulation
 
 The simulator is then configured and run:
 
@@ -64,7 +64,7 @@ monitors.Raw(): Captures raw neural activity data.
 
 sim.run(): Executes the simulation.
 
-Visualize the Results
+### Visualize the Results
 
 Use matplotlib to plot the results:
 
@@ -76,7 +76,7 @@ plt.show()
 
 This generates a time series plot of neural activity from one brain region.
 
-Modify Stimulation Parameters
+### Modify Stimulation Parameters
 
 You can modify the external stimulation parameters by adjusting the external input:
 
@@ -85,7 +85,7 @@ stimulus.configure_waveform(frequency=10, amplitude=0.05)
 
 This allows users to simulate different stimulation conditions and analyze their effects on brain connectivity.
 
-Interpret Connectivity Changes
+### Interpret Connectivity Changes
 
 To analyze how stimulation impacts connectivity, use:
 
@@ -96,7 +96,8 @@ plt.title("Brain Connectivity Matrix")
 plt.show()
 
 This visualization helps interpret connectivity changes across brain regions.
-Applications
+
+## Applications
 
 Neuromodulation: Understanding how stimulation affects brain connectivity.
 
